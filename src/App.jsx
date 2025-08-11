@@ -22,7 +22,7 @@ const router = createBrowserRouter([
       {
         path: 'order/new',
         element: <CreateOrder />,
-        action: createOrderAction,
+        action: createOrderAction, // for creating new orders
       },
       { path: 'order/:orderId', element: <Order />, loader: orderLoader },
     ],
